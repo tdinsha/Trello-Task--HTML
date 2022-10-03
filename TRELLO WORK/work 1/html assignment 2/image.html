@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Parent Container */
+.content_img{
+ position: relative;
+ width: 200px;
+ height: 200px;
+ float: center;
+padding-left: 450px;
+ 
+}
+
+/* Child Text Container */
+.content_img div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: black;
+ left: 610px;
+ color: white;
+ margin-bottom: 3px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */
+.content_img:hover{
+ cursor: pointer;
+
+}
+
+.content_img:hover div{
+ width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ color: rgb(190, 149, 149);
+ opacity: 0.7; 
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <img src="pic2.jpg" alt="Image not found" width="300px" height="200px" style="padding: 50px  80px; ">
+    <br>
+</center>
+    <div class="content_img">
+        <img src='pic1.jpg' width='500px' height='400px'>
+        <div>My name is Ann. I am from Nilambur.I working as UI/UX Designer from Futura Labs Calicut.</div>
+       </div>
+    
+</body>
+</html>
